@@ -6,12 +6,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 }
 
 .component-container {
 	display: flex;
-	gap: 40px;
+	gap: 5px;
 }
 
 .component {
@@ -30,4 +29,10 @@ h2 {
 	font-size: 14px;
 	color: #000;
 	text-align: center;
+}
+
+.portal-image {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
 }

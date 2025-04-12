@@ -8,6 +8,9 @@ function Navigation2() {
 					<li>
 						<Link to="/">Home</Link>
 					</li>
+					<li>
+						<Link to="/making">Making-of</Link>
+					</li>
 				</ul>
 			</nav>
 

@@ -9,16 +9,14 @@ function Navigation() {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/making">Making-of</Link>
-					</li>
-					<li>
 						<Link to="/portalpage">Projects</Link>
 					</li>
 					<li>
-						<Link to="/parallax" target="_blank" rel="noopener noreferrer">Parallax</Link>
+						<Link to="/parallax">Parallax</Link>
 					</li>
 				</ul>
 			</nav>
+			<Outlet />
 		</>
 	);
 }

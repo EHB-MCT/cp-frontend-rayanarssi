@@ -1,11 +1,21 @@
-function Portalpage(props) {
-	return (
-		<>
-			<img src={props.horizonal_cover} alt="" />
-			<h2>{props.surname}</h2>
-			<h2>{props.name}</h2>
-		</>
-	);
+import Portal from "./Portal";
+
+function Portalpage({ data }) {
+    console.log("Portalpage data:", data); // Debugging
+
+    return (
+        <div className="component-container">
+            {data.map((portalpage) => (
+                <div className="component" key={portalpage.id}>
+                    <Portal
+                        name={portalpage.name}
+                        surname={portalpage.surname}
+                        horizontal_cover={portalpage.horizontal_cover}
+                    />
+                </div>
+            ))}
+        </div>
+    );
 }
 
 export default Portalpage;
