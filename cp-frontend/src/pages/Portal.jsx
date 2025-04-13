@@ -1,13 +1,17 @@
-function Portal(props) {
-    console.log("Portal props:", props); // Debugging
+import { Link } from "react-router";
 
-    return (
-        <>
-            <img src={props.horizontal_cover} alt="" />
-            <h2>{props.surname}</h2>
-            <h2>{props.name}</h2>
-        </>
-    );
+function Portal(props) {
+	console.log("Portal props:", props); // Debugging
+
+	return (
+		<>
+			<Link to="/parallax">
+				<img src={props.horizontal_cover} alt="" />
+			</Link>
+			<h2>{props.surname}</h2>
+			<h2>{props.name}</h2>
+		</>
+	);
 }
 
 export default Portal;

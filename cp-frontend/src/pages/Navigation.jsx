@@ -11,9 +11,6 @@ function Navigation() {
 					<li>
 						<Link to="/portalpage">Projects</Link>
 					</li>
-					<li>
-						<Link to="/parallax">Parallax</Link>
-					</li>
 				</ul>
 			</nav>
 			<Outlet />
