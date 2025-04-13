@@ -3,14 +3,15 @@ import { Outlet, Link } from "react-router";
 function Navigation2() {
 	return (
 		<>
-			<nav>
+			<nav className="navigation-bar">
 				<ul>
 					<li>
-						<Link to="/">Home</Link>
+						<Link to="/Home">
+							<img className="logo" src="./Logo.png" alt="" />
+						</Link>
 					</li>
-
 					<li>
-						<Link to="/making">Making-of</Link>
+						<Link to="/Making">Making-of</Link>
 					</li>
 				</ul>
 			</nav>
