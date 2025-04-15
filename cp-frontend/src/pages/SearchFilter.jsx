@@ -1,11 +1,23 @@
-function SearchFilter({ onSearch }) {
+import React from "react";
+
+function SearchFilter({ onSearch, onGenreChange, genres }) {
 	return (
-		<div>
+		<div className="filter-container">
 			<input
 				type="text"
-				placeholder="Search for a fairytale..."
-				onChange={(event) => onSearch(event.target.value)}
+				placeholder="Search by title..."
+				onChange={(e) => onSearch(e.target.value)}
+				className="search-input"
 			/>
+
+			<select onChange={(e) => onGenreChange(e.target.value)} className="genre-select">
+				<option value="">All Genres</option>
+				{genres.map((genre, index) => (
+					<option key={index} value={genre}>
+						{genre}
+					</option>
+				))}
+			</select>
 		</div>
 	);
 }
