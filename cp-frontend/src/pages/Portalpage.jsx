@@ -6,29 +6,18 @@ function Portalpage({ data }) {
 	console.log("Portalpage data:", data); // Debugging
 
 	const [searchTerm, setSearchTerm] = useState("");
-	const [selectedGenre, setSelectedGenre] = useState("");
 
-	const genres = [...new Set(data.map((item) => item.Genre))];
-
-	const filteredData = data.filter((portalpage) => {
-		const matchesTitle = portalpage.title_fairytale
-			.toLowerCase()
-			.includes(searchTerm.toLowerCase());
-		const matchesGenre = selectedGenre
-			? portalpage.Genre.toLowerCase() === selectedGenre.toLowerCase()
-			: true;
-
-		return matchesTitle && matchesGenre;
-	});
+	// Filter the data based on the search term
+	const filteredData = data.filter((portalpage) =>
+		portalpage.title_fairytale.toLowerCase().includes(searchTerm.toLowerCase())
+	);
 
 	return (
 		<div className="component-container">
-			<SearchFilter
-				onSearch={setSearchTerm}
-				onGenreChange={setSelectedGenre}
-				genres={genres}
-			/>
+			{/* Pass the setSearchTerm function to SearchFilter */}
+			<SearchFilter onSearch={setSearchTerm} />
 
+			{/* Map over the filtered data */}
 			{filteredData.map((portalpage) => (
 				<div className="component" key={portalpage.id}>
 					<Portal
