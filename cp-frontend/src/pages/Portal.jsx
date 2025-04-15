@@ -9,7 +9,7 @@ function Portal(props) {
 				<img src={props.horizontal_cover} alt="" />
 			</Link>
 			<h2>{props.surname}</h2>
-			<h2>{props.name}</h2>
+			<h2>{props.title_fairytale}</h2>
 		</>
 	);
 }

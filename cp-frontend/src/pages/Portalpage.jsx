@@ -21,7 +21,6 @@ function Portalpage({ data }) {
 			{filteredData.map((portalpage) => (
 				<div className="component" key={portalpage.id}>
 					<Portal
-						name={portalpage.name}
 						surname={portalpage.surname}
 						horizontal_cover={portalpage.horizontal_cover}
 						title_fairytale={portalpage.title_fairytale}

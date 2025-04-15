@@ -3,7 +3,7 @@ function SearchFilter({ onSearch }) {
 		<div>
 			<input
 				type="text"
-				placeholder="Search for a movie"
+				placeholder="Search for a fairytale..."
 				onChange={(event) => onSearch(event.target.value)}
 			/>
 		</div>
