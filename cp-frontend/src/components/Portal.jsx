@@ -1,15 +1,13 @@
-import { Link } from "react-router";
+import { Link } from "react-router"; 
 
-function Portal(props) {
-	console.log("Portal props:", props); // Debugging
-
+function Portal({ id, surname, horizontal_cover, title_fairytale }) {
 	return (
 		<>
-			<Link to="/parallax">
-				<img src={props.horizontal_cover} alt="" />
+			<Link to={`/parallax/${id}`}>
+				<img src={horizontal_cover} alt={title_fairytale} />
 			</Link>
-			<h2>{props.surname}</h2>
-			<h2>{props.title_fairytale}</h2>
+			<h2>{surname}</h2>
+			<h2>{title_fairytale}</h2>
 		</>
 	);
 }

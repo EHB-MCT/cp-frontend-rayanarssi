@@ -1,17 +1,22 @@
-import { Outlet, Link } from "react-router";
+import { Outlet, Link, useParams } from "react-router";
 
 function Navigation2() {
+	const { id } = useParams();
+
 	return (
 		<>
 			<nav className="navigation-bar">
 				<ul>
 					<li>
-						<Link to="/Home">
-							<img className="logo" src="./Logo.png" alt="" />
+						<Link to="/home">
+							<img className="logo" src="./Logo.png" alt="logo" />
 						</Link>
 					</li>
+
 					<li>
-						<Link to="/Making">Making-of</Link>
+						{id && (
+							<Link to={`/making/${id}`}>Making-of</Link>
+						)}
 					</li>
 				</ul>
 			</nav>
