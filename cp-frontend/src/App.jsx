@@ -14,6 +14,7 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Navigation />}>
+					<Route path="making/:id" element={<Making />} />
 					<Route index element={<Home />} />
 					<Route path="/home" element={<Home />} />
 					<Route path="/portalpage" element={<Portalpage data={DATA} />} />
