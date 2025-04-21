@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Portal from "./Portal";
-import SearchFilter from "./SearchFilter";
+import Portal from "../components/Portal";
+import SearchFilter from "../components/SearchFilter";
 
 function Portalpage({ data }) {
 	const [searchTerm, setSearchTerm] = useState("");
