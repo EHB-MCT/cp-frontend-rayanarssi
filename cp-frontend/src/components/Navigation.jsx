@@ -10,13 +10,13 @@ function Navigation() {
 							<img className="logo" src="./Logo.png" alt="" />
 						</Link>
 					</li>
-					<li classname="nav-item">
+					<li className="nav-item">
 						<Link to="/">About us</Link>
 					</li>
-					<li classname="nav-item">
+					<li className="nav-item">
 						<Link to="/Portalpage">Fairytales</Link>
 					</li>
-					<li classname="nav-item">
+					<li className="nav-item">
 						<Link to="/Portalpage">Making of</Link>
 					</li>
 				</ul>
