@@ -28,6 +28,12 @@ img {
 	object-fit: cover;
 }
 
+h1 {
+	font-family: "Bungee Regular", sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+}
+
 h2 {
 	font-size: 14px;
 	color: #000;
@@ -92,7 +98,92 @@ h2 {
 	color: white;
 }
 
+/*About Us*/
 
+.section-title {
+	font-size: 2.5rem;
+	font-weight: 900;
+	margin-bottom: 1.5rem;
+  }
+
+  .popular-section {
+	padding: 2.5rem 2rem;
+  }
+  
+  .popular-list {
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+  }
+  
+  .popular-card {
+	position: relative;
+	background: white;
+	border-radius: 1rem;
+	width: 16rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+  }
+
+  .popular-image-wrapper {
+	position: relative;
+  }
+  
+  .popular-image {
+	width: 100%;
+	height: 10rem;
+	object-fit: cover;
+  }
+
+  .card-content {
+	padding: 1rem;
+  }
+  
+  .card-title {
+	color: #e11d48; /* Tailwind red-600 */
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+  }
+
+  .card-arrow {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+  }
+  
+
+  .about-section {
+	background-color: #d1fae5; /* Tailwind green-100 */
+	padding: 3rem 2rem;
+	border-radius: 2rem;
+	margin-top: 3rem;
+  }
+  
+  .highlight {
+	color: #e11d48;
+  }
+  
+  .about-description {
+	color: #1f2937; 
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+  }
+  
+  .about-button {
+	background-color: #e11d48;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 0.75rem;
+	font-weight: 600;
+	border: none;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+  }
+  
+  .about-button:hover {
+	background-color: #be123c;
+  }
 
 /*Making-of*/
 .making-page {

@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router";
 import DATA from "../api/fairytales.json";
-import MakingData from "./Makingdata";
+import MakingData from "../components/Makingdata";
 
 function Making() {
 	const { id } = useParams();

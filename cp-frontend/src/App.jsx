@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import Navigation2 from "./components/Navigation2";
 import Parallax from "./pages/Parallax";
-import Making from "./components/Making";
+import Making from "./pages/Making";
 import DATA from "./api/fairytales.json";
 import ErrorBoundary from "./components/ErrorBoundary";
 
