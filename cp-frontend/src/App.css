@@ -1,12 +1,15 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
-	background-color: #fff;
+	background-color: #ebf5ec;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+/*
+Colors: #EBF5EC, #E51131, #000000
+*/
 
 .component-container {
 	display: flex;
@@ -32,27 +35,29 @@ h2 {
 }
 
 .logo {
-	width: 50px;
+	width: 130px;
 	height: auto;
-	display: block;
-	margin: 0 auto;
-	object-fit: contain;
 }
+
 /* Navigation bar styles */
 .navigation-bar {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 200px;
+	height: 100%;
+	margin-left: 20px;
 	display: flex;
-	background-color: #ccc;
-	padding: 10px 20px;
+	flex-direction: column;
+	padding: 20px;
 	z-index: 1000;
+	background-color: aqua;
 }
 
 .navigation-bar ul {
 	list-style: none;
 	display: flex;
+	flex-direction: column;
 	gap: 20px;
 	margin: 0;
 	padding: 0;
@@ -61,12 +66,31 @@ h2 {
 .navigation-bar li {
 	display: flex;
 	align-items: center;
+	margin-top: 10px;
+}
+
+.navigation-bar li:first-child {
+	justify-content: center;
+	margin-bottom: 80px;
 }
 
 .navigation-bar a {
+	font-family: "Helvetica Nueu Regular", sans-serif;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 	color: black;
-	font-size: 16px;
+	font-size: 20px;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 70px;
+}
+
+.navigation-bar a:hover {
+	background-color: #e51131;
+	border-radius: 7px 0px 0px 7px;
+	transition: background-color 0.2s ease;
+	color: white;
 }
 
 /*Making-of*/

@@ -15,7 +15,7 @@ function Navigation2() {
 
 					<li>
 						{id && (
-							<Link to={`/making/${id}`}>Making-of</Link>
+							<Link to={`/making/${id}`}>Making of</Link>
 						)}
 					</li>
 				</ul>
