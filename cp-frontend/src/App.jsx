@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import "./App.css";
-import Portalpage from "./components/Portalpage";
-import Home from "./components/Home";
+import Portalpage from "./pages/Portalpage";
+import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import Navigation2 from "./components/Navigation2";
-import Parallax from "./components/Parallax";
+import Parallax from "./pages/Parallax";
 import Making from "./components/Making";
 import DATA from "./api/fairytales.json";
 import ErrorBoundary from "./components/ErrorBoundary";
