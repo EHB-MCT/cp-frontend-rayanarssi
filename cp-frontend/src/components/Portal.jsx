@@ -1,9 +1,9 @@
-import { Link } from "react-router"; 
+import { Link } from "react-router";
 
 function Portal({ id, surname, horizontal_cover, title_fairytale }) {
 	return (
 		<>
-			<Link to={`/parallax/${id}`}>
+			<Link to={`/making/${id}`}>
 				<img src={horizontal_cover} alt={title_fairytale} />
 			</Link>
 			<h2>{surname}</h2>

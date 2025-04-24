@@ -17,7 +17,7 @@ function Navigation() {
 						<Link to="/Portalpage">Fairytales</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/Portalpage">Making of</Link>
+						<Link to="/Making">Making of</Link>
 					</li>
 				</ul>
 			</nav>

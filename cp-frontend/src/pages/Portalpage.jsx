@@ -25,6 +25,7 @@ function Portalpage({ data }) {
 				onGenreChange={setSelectedGenre}
 				genres={genres}
 			/>
+
 			{filteredData.map((item) => (
 				<div className="component" key={item.id}>
 					<Portal
