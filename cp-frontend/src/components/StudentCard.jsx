@@ -6,8 +6,10 @@ function StudentCard({ student }) {
 				alt={`${student.name} ${student.surname}`}
 				className="student-image"
 			/>
-			<p className="student-name"><strong>{student.name}</strong></p>
-			<p className="student-surname">{student.surname}</p>
+			<p className="student-surname">
+				<strong>{student.surname}</strong>
+			</p>
+			<p className="student-name">{student.name}</p>
 		</div>
 	);
 }

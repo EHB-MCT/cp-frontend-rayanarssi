@@ -13,7 +13,7 @@ function PopularCard({ fairytale }) {
 					<strong>{fairytale.title_fairytale}</strong>
 				</p>
 				<p className="card-author">
-					{fairytale.name} {fairytale.surname}
+					{fairytale.surname} {fairytale.name}
 				</p>
 			</div>
 		</div>

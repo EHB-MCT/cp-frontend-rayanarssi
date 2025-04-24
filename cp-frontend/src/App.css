@@ -8,7 +8,7 @@ body {
 }
 
 /*
-Colors: #EBF5EC, #E51131, #000000
+Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 */
 
 .component-container {
@@ -63,7 +63,7 @@ h2 {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 10px;
 	margin: 0;
 	padding: 0;
 }
@@ -100,7 +100,7 @@ h2 {
 
 /*About Us*/
 
-#root{
+#root {
 	margin-left: 14rem;
 }
 
@@ -158,7 +158,7 @@ h2 {
 }
 
 .about-section {
-	background-color: #d1fae5;
+	background-color: #cfe1d1;
 	padding: 3rem 2rem;
 	border-radius: 2rem;
 	margin-top: 3rem;
@@ -198,6 +198,7 @@ h2 {
 	font-size: 1rem;
 	color: #6b7280;
 	margin-bottom: 2rem;
+	margin-top: -10px;
 }
 .students-list {
 	display: flex;
@@ -216,19 +217,20 @@ h2 {
 	object-fit: cover;
 	border-radius: 10px;
 	margin-bottom: 0.75rem;
+	cursor: pointer;
 }
 
 .student-name {
-	font-weight: bold;
-	font-size: 1.2rem;
-	margin-top: 2px;
+	font-size: 1rem;
+	color: #6b6b6b;
+	margin-top: -15px;
 	margin-left: 10px;
 }
 
 .student-surname {
-	font-size: 1rem;
-	color: #6b6b6b;
-	margin-top: -15px;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-top: -10px;
 	margin-left: 10px;
 }
 
