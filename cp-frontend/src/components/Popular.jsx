@@ -7,8 +7,8 @@ function Popular() {
 		<section className="popular-section">
 			<h1 className="section-title">Popular</h1>
 			<div className="popular-list">
-				{data.slice(0, 3).map((item, index) => (
-					<PopularCard key={item.id} index={index} fairytale={item} />
+				{data.slice(0, 3).map((item) => (
+					<PopularCard key={item.id} fairytale={item} />
 				))}
 			</div>
 		</section>

@@ -12,8 +12,10 @@ function PopularCard({ fairytale }) {
 				<p className="card-title">
 					<strong>{fairytale.title_fairytale}</strong>
 				</p>
+				<p className="card-author">
+					{fairytale.name} {fairytale.surname}
+				</p>
 			</div>
-			<span>→</span>
 		</div>
 	);
 }

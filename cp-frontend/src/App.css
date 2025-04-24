@@ -84,7 +84,7 @@ h2 {
 	text-decoration: none;
 	display: flex;
 	align-items: center;
-	color: black;
+	color: #000000;
 	font-size: 20px;
 	padding: 5px;
 	padding-left: 20px;
@@ -100,78 +100,82 @@ h2 {
 
 /*About Us*/
 
+#root{
+	margin-left: 5rem;
+}
+
 .section-title {
 	font-size: 2.5rem;
 	font-weight: 900;
-	margin-bottom: 1.5rem;
-  }
+	margin-top: 0.5rem;
 
-  .popular-section {
-	padding: 2.5rem 2rem;
-  }
-  
-  .popular-list {
+	margin-bottom: 1.5rem;
+}
+
+.popular-section {
+	padding: 2.5rem 0rem;
+}
+
+.popular-list {
 	display: flex;
 	gap: 1.5rem;
 	flex-wrap: wrap;
-  }
-  
-  .popular-card {
+}
+
+.popular-card {
 	position: relative;
 	background: white;
 	border-radius: 1rem;
-	width: 16rem;
+	width: 23rem;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-  }
+}
 
-  .popular-image-wrapper {
+.popular-image-wrapper {
 	position: relative;
-  }
-  
-  .popular-image {
-	width: 100%;
-	height: 10rem;
-	object-fit: cover;
-  }
+}
 
-  .card-content {
-	padding: 1rem;
-  }
-  
-  .card-title {
-	color: #e11d48; /* Tailwind red-600 */
+.popular-image {
+	width: 100%;
+	height: 14rem;
+	object-fit: cover;
+}
+
+.card-content {
+	padding: 0rem 1rem 1rem;
+}
+
+.card-title {
+	color: #e51131;
 	font-weight: 600;
 	margin-bottom: 0.25rem;
-  }
+}
 
-  .card-arrow {
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	font-size: 1.5rem;
-  }
-  
+.card-author {
+	font-size: 0.875rem;
+	color: #000000;
+	margin-top: 0.25rem;
+}
 
-  .about-section {
-	background-color: #d1fae5; /* Tailwind green-100 */
+.about-section {
+	background-color: #d1fae5;
 	padding: 3rem 2rem;
 	border-radius: 2rem;
 	margin-top: 3rem;
-  }
-  
-  .highlight {
-	color: #e11d48;
-  }
-  
-  .about-description {
-	color: #1f2937; 
+}
+
+.highlight {
+	color: #e51131;
+}
+
+.about-description {
+	color: #000000;
 	line-height: 1.6;
 	margin-bottom: 1.5rem;
-  }
-  
-  .about-button {
-	background-color: #e11d48;
+}
+
+.about-button {
+	background-color: #e51131;
 	color: white;
 	padding: 0.75rem 1.5rem;
 	border-radius: 0.75rem;
@@ -179,11 +183,54 @@ h2 {
 	border: none;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
-  }
-  
-  .about-button:hover {
-	background-color: #be123c;
-  }
+}
+
+.about-button:hover {
+	background-color: #e51131;
+}
+
+.students-section {
+	margin-top: 2rem;
+	padding: 2rem;
+}
+
+.section-subtitle {
+	font-size: 1rem;
+	color: #6b7280;
+	margin-bottom: 2rem;
+}
+.students-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.student-card {
+	width: 150px;
+	text-align: left;
+}
+
+.student-image {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 0.75rem;
+}
+
+.student-name {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+.student-surname {
+	font-size: 1rem;
+	color: #6b6b6b;
+	margin-top: -15px;
+	margin-left: 10px;
+}
 
 /*Making-of*/
 .making-page {

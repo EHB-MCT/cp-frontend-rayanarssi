@@ -83,5 +83,22 @@
 		"extra_image1": "/Tentacels.jpg",
 		"extra_image2": "/Boat.jpg",
 		"extra_image3": "/Prince.jpg"
+	},
+	{
+		"id": 6,
+		"surname": "Achraf",
+		"name": "Benali",
+		"title_fairytale": "League Of legends",
+		"Genre": "Sad",
+		"student": "/Student.png",
+		"horizontal_cover": "/Horizontal_cover.png",
+		"vertical_cover": "/Vertical_cover.png",
+		"website": "https://login.ehb.be/login",
+		"banner": "/Banner.png",
+		"description": "A young mermaid princess makes a Faustian bargain in an attempt to become human and win a prince's love.",
+		"video": "https://www.youtube.com/watch?v=5Ix_C2zgjPc&ab_channel=ErasmushogeschoolBrussel",
+		"extra_image1": "/Tentacels.jpg",
+		"extra_image2": "/Boat.jpg",
+		"extra_image3": "/Prince.jpg"
 	}
 ]
