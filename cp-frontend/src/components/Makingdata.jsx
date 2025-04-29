@@ -2,31 +2,29 @@ function MakingData(item) {
 	return (
 		<>
 			<div className="making-data-container">
-				<img className="banner" src={item.banner} alt="Banner" />
-
-				<div className="project-meta">
-					<h2>
-						<strong>Project</strong>
-						<br />
-						{item.title_fairytale}
-					</h2>
-					<h2>
-						<strong>By</strong>
-						<br />
+				<img className="banner" src={item.horizontal_cover} alt="Banner" />
+				<div className="project-info">
+					<p className="label">Project</p>
+					<p className="value">{item.title_fairytale}</p>
+					<p className="label">By</p>
+					<p className="value">
 						{item.surname} {item.name}
-					</h2>
+					</p>
 				</div>
+			</div>
 
-				<div className="video-description-container">
-					<div className="video-section">
-						<video controls src={item.video} />
-					</div>
-					<div className="description-section">
-						<h3>
-							<strong>Description</strong>
-						</h3>
-						<p>{item.description}</p>
-					</div>
+			<div className="video-description-container">
+				<div className="video-section">
+					<video controls src={item.video} />
+				</div>
+				<div className="description-section">
+					<h3>
+						<strong>Description</strong>
+					</h3>
+					<p>{item.description}</p>
+					<a href="#" className="discover-link">
+						Discover the project
+					</a>
 				</div>
 			</div>
 

@@ -36,7 +36,7 @@ function Making() {
     }
 
     return (
-        <div className="making-page">
+        <section className="making-page">
             <h1>Making of</h1>
             <div className="search-dropdown-container">
                 <input
@@ -67,7 +67,7 @@ function Making() {
             ) : (
                 <p>Please search and select a fairytale to view details.</p>
             )}
-        </div>
+        </section>
     );
 }
 
