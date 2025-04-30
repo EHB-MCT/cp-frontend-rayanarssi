@@ -28,16 +28,7 @@ function MakingData(item) {
 				</div>
 			</div>
 
-			<div className="extra-footage">
-				<h3>
-					<strong>Extra footage</strong>
-				</h3>
-				<div className="extra-images">
-					<img src={item.extra_image1} alt="Extra 1" />
-					<img src={item.extra_image2} alt="Extra 2" />
-					<img src={item.extra_image3} alt="Extra 3" />
-				</div>
-			</div>
+			
 		</>
 	);
 }
