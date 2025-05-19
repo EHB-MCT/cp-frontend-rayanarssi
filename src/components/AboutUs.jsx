@@ -1,4 +1,5 @@
 import "../App.css";
+import { Link } from "react-router";
 
 function AboutUs() {
 	return (
@@ -11,12 +12,17 @@ function AboutUs() {
 				provides access to interactive, one-page websites <br /> inspired by
 				classic fairy tales. Each project combines storytelling with web
 				development, with modern techniques <br /> bringing the magic of the
-				stories to life. Explore the projects and experience the enchantment via the links to <br /> the
-				live versions.
+				stories to life. Explore the projects and experience the enchantment via
+				the links to <br /> the live versions.
 			</p>
-			<button className="about-button">Discover all projects</button>
+			<Link to="/portalpage" className="about-button">
+				Discover all projects
+			</Link>
 		</section>
 	);
 }
 
 export default AboutUs;
+
+
+
