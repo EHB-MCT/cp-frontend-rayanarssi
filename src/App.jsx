@@ -8,8 +8,7 @@ import DATA from "./api/fairytales.json";
 
 function App() {
 	return (
-		// basename="/{cp-frontend-rayanarssi}/"
-		<BrowserRouter >
+		<BrowserRouter basename="/cp-frontend-rayanarssi">
 			<Routes>
 				<Route path="/" element={<Navigation />}>
 					<Route path="making/:id" element={<Making />} />
