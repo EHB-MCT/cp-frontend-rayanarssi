@@ -17,7 +17,7 @@ const Intro = () => {
 		<div
 			id="intro"
 			style={{
-				position: "fixed",
+				position: "relative",
 				top: 0,
 				left: 0,
 				width: "100vw",
@@ -160,14 +160,14 @@ const Intro = () => {
 					style={{
 						position: "absolute",
 						top: 0,
-						right: "-20vw",
+						right: "30vw",
 						width: "40vw",
-						height: "35vh",
+						height: "40vh",
 						backgroundImage: `url(${base}/assets/Cloud3_sky.png)`,
 						backgroundSize: "contain",
 						backgroundRepeat: "no-repeat",
 						zIndex: 5,
-						transform: `translate(-50%, ${scrollY * 0.1}px)`,
+						transform: `translate(30vw, ${scrollY * 0.1}px)`,
 					}}
 				/>
 
