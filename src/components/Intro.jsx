@@ -1,7 +1,6 @@
-import { React, useEffect, useRef } from "react";
-
 const Intro = () => {
 	const containerRef = useRef(null);
+	const base = import.meta.env.BASE_URL;
 
 	const layers = [
 		"Cloud1_sky.png",
@@ -37,7 +36,7 @@ const Intro = () => {
 			className="relative h-[200vh] overflow-hidden bg-blue-200"
 		>
 			{layers.map((img, index) => {
-				const path = `/parallax/Intro/${img}`;
+				const path = `${base}assets/${img}`;
 				console.log("Loading image:", path); // Debug line
 				return (
 					<img
