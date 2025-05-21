@@ -5,11 +5,4 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
 	plugins: [react()],
 	base: "/cp-frontend-rayanarssi/",
-	build: {
-		rollupOptions: {
-			input: {
-				main: "index.html",
-			},
-		},
-	},
 });
