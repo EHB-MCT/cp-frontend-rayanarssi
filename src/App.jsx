@@ -8,6 +8,11 @@ import DATA from "./api/fairytales.json";
 import Parallax from "./pages/Parallax";
 
 function App() {
+	const redirect = new URLSearchParams(window.location.search).get("redirect");
+	if (redirect) {
+		// Ajoute le basename ici
+		window.history.replaceState(null, "", `/cp-frontend-rayanarssi${redirect}`);
+	}
 	return (
 		<BrowserRouter basename="/cp-frontend-rayanarssi/">
 			<Routes>
