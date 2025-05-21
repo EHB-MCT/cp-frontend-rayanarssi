@@ -7,6 +7,7 @@ Currently, two official plugins are available:
 - [Searchfilter in react](https://canvas.ehb.be/courses/40436/pages/exercise-03-search-filter?module_item_id=780712)
 - [Filter in react](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops#filtering-in-react)
 - [Error to deploy](https://vite.dev/guide/static-deploy)
+- [Error to deploy Parallax](https://youtu.be/fuGu-Ponjf8?si=LMhyaossDNcPn9kv)
 
 ## Expanding the ESLint configuration
 

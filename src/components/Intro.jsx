@@ -37,7 +37,7 @@ const Intro = () => {
 			className="relative h-[200vh] overflow-hidden bg-blue-200"
 		>
 			{layers.map((img, index) => {
-				const path = `parallax/Intro/${img}`;
+				const path = `/parallax/Intro/${img}`;
 				console.log("Loading image:", path); // Debug line
 				return (
 					<img

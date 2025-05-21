@@ -7,7 +7,7 @@ function Navigation() {
 				<ul>
 					<li>
 						<Link to="/Home">
-							<img className="logo" src="./Logo.png" alt="" />
+							<img className="logo" src="./assets/Logo.png" alt="" />
 						</Link>
 					</li>
 					<li className="nav-item">
