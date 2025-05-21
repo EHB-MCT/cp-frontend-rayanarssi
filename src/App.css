@@ -11,15 +11,48 @@ body {
 Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 */
 
-.component-container {
-	display: flex;
-	gap: 5px;
+.portal-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 2rem;
+	padding: 0.5rem;
 }
 
-.component {
+/* Card style */
+.portal-card {
+	background-color: #cfe1d1;
+	border-radius: 15px;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+}
+
+.portal-card img {
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.portal-card a {
+	width: 100%;
+	height: 200px;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+/* Text section */
+.portal-content {
+	padding: 1rem;
+	text-align: left;
+	background-color: #cfe1d1;
+}
+
+.portal-title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #1e1e1e;
+	margin: 0.5rem 0 0.2rem;
 }
 
 img {

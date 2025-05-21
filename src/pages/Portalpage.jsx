@@ -19,24 +19,24 @@ function Portalpage({ data }) {
 	});
 
 	return (
-		<div className="component-container">
+		<section className="popullar-section">
 			<SearchFilter
 				onSearch={setSearchTerm}
 				onGenreChange={setSelectedGenre}
 				genres={genres}
 			/>
 
-			{filteredData.map((item) => (
-				<div className="component" key={item.id}>
+			<div className="portal-grid">
+				{filteredData.map((item) => (
 					<Portal
+						key={item.id}
 						id={item.id}
-						surname={item.surname}
-						horizontal_cover={item.horizontal_cover}
+						thumbnail={item.thumbnail}
 						title_fairytale={item.title_fairytale}
 					/>
-				</div>
-			))}
-		</div>
+				))}
+			</div>
+		</section>
 	);
 }
 
