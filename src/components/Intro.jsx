@@ -1,30 +1,21 @@
 import { React, useEffect, useRef } from "react";
 
 const Intro = () => {
-	return (
-		<div className="relative h-screen overflow-hidden bg-blue-200">
-			<img
-				src="/cp-frontend-rayanarssi/parallax/Intro/Cloud1_sky.png"
-				alt="Cloud1 Sky"
-				className="absolute w-full object-cover top-0 left-0 z-10"
-			/>
-		</div>
-	);
-	/*const containerRef = useRef(null);
-	const base = import.meta.env.BASE_URL;
+	const containerRef = useRef(null);
+
 	const layers = [
-	"Cloud1_sky.png",
-	"Cloud2_sky.png",
-	"Cloud3_sky.png",
-	"Left_1st_cloud.png",
-	"Left_2nd_cloud.png",
-	"Right_1st_cloud.png",
-	"Right_2nd_cloud.png",
-	"Right_3rd_cloud.png",
-	"1st_line.png",
-	"2nd_line.png",
-	"3rd_line.png",
-];
+		"Cloud1_sky.png",
+		"Cloud2_sky.png",
+		"Cloud3_sky.png",
+		"Left_1st_cloud.png",
+		"Left_2nd_cloud.png",
+		"Right_1st_cloud.png",
+		"Right_2nd_cloud.png",
+		"Right_3rd_cloud.png",
+		"1st_line.png",
+		"2nd_line.png",
+		"3rd_line.png",
+	];
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -46,7 +37,7 @@ const Intro = () => {
 			className="relative h-[200vh] overflow-hidden bg-blue-200"
 		>
 			{layers.map((img, index) => {
-				const path = `${base}parallax/Intro/${img}`;
+				const path = `/parallax/Intro/${img}`;
 				console.log("Loading image:", path); // Debug line
 				return (
 					<img
@@ -59,7 +50,7 @@ const Intro = () => {
 				);
 			})}
 		</div>
-	);*/
+	);
 };
 
 export default Intro;

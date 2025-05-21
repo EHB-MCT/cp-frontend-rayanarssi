@@ -22,8 +22,8 @@ function App() {
 					<Route path="home" element={<Home />} />
 					<Route path="portalpage" element={<Portalpage data={DATA} />} />
 					<Route path="making" element={<Making />} />
-					<Route path="parallax" element={<Parallax />} />
 				</Route>
+				<Route path="parallax" element={<Parallax />} />
 			</Routes>
 		</BrowserRouter>
 	);
