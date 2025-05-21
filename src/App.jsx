@@ -5,18 +5,19 @@ import Home from "./pages/Home";
 import Navigation from "./components/Navigation";
 import Making from "./pages/Making";
 import DATA from "./api/fairytales.json";
+import Parallax from "./pages/Parallax";
 
 function App() {
 	return (
-		<BrowserRouter basename="/cp-frontend-rayanarssi">
+		<BrowserRouter basename="/cp-frontend-rayanarssi/">
 			<Routes>
 				<Route path="/" element={<Navigation />}>
 					<Route path="making/:id" element={<Making />} />
 					<Route index element={<Home />} />
-					<Route path="/home" element={<Home />} />
-					<Route path="/portalpage" element={<Portalpage data={DATA} />} />
-					<Route path="/making" element={<Making />} />
-					<Route path="/making/:id" element={<Making />} />
+					<Route path="home" element={<Home />} />
+					<Route path="portalpage" element={<Portalpage data={DATA} />} />
+					<Route path="making" element={<Making />} />
+					<Route path="parallax" element={<Parallax />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

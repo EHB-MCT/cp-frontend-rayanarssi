@@ -1,9 +1,11 @@
 function PopularCard({ fairytale }) {
+		const base = import.meta.env.BASE_URL;
+
 	return (
 		<div className="popular-card">
 			<div className="popular-image-wrapper">
 				<img
-					src={fairytale.horizontal_cover}
+					src={`${base}/${fairytale.horizontal_cover}`}
 					alt={fairytale.title_fairytale}
 					className="popular-image"
 				/>

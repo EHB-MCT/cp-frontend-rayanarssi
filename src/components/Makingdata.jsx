@@ -1,8 +1,14 @@
 function MakingData(item) {
+	const base = import.meta.env.BASE_URL;
+
 	return (
 		<>
 			<div className="making-data-container">
-				<img className="banner" src={item.horizontal_cover} alt="Banner" />
+				<img
+					className="banner"
+					src={`${base}/${item.horizontal_cover}`}
+					alt="Banner"
+				/>
 				<div className="project-info">
 					<p className="label">Project</p>
 					<p className="value">{item.title_fairytale}</p>
@@ -15,7 +21,7 @@ function MakingData(item) {
 
 			<div className="video-description-container">
 				<div className="video-section">
-					<video controls src={item.video} />
+					<video controls src={`${base}/${item.video}`} />
 				</div>
 				<div className="description-section">
 					<h3>
@@ -27,8 +33,6 @@ function MakingData(item) {
 					</a>
 				</div>
 			</div>
-
-			
 		</>
 	);
 }

@@ -1,8 +1,10 @@
 function StudentCard({ student }) {
+	const base = import.meta.env.BASE_URL;
+
 	return (
 		<div className="student-card">
 			<img
-				src={student.student}
+				src={`${base}/${student.student}`}
 				alt={`${student.name} ${student.surname}`}
 				className="student-image"
 			/>
