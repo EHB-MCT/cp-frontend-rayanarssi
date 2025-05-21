@@ -16,6 +16,7 @@ const layers = [
 
 const Intro = () => {
 	const containerRef = useRef(null);
+	const base = import.meta.env.BASE_URL;
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -37,7 +38,7 @@ const Intro = () => {
 			className="relative h-[200vh] overflow-hidden bg-blue-200"
 		>
 			{layers.map((img, index) => {
-				const path = `/parallax/Intro/${img}`;
+				const path = `${base}/parallax/Intro/${img}`;
 				console.log("Loading image:", path); // Debug line
 				return (
 					<img
