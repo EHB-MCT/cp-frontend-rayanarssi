@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const Intro = () => {
 	const containerRef = useRef(null);
@@ -40,13 +40,18 @@ const Intro = () => {
 			{layers.map((img, index) => {
 				const path = `${base}assets/${img}`;
 				console.log("Loading image:", path); // Debug line
+
+				const isText = img.includes("line");
+
 				return (
 					<img
 						key={index}
 						src={path}
 						alt={img}
-						className="parallax-layer absolute w-full object-cover top-0 left-0"
-						style={{ zIndex: index }}
+						className={`parallax-layer absolute 
+              ${isText ? "w-3/4 left-1/2 transform -translate-x-1/2" : "w-full"}
+              top-0 object-contain`}
+						style={{ zIndex: 10 + index, pointerEvents: "none", opacity: 1 }}
 					/>
 				);
 			})}
