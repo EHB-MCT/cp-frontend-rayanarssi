@@ -19,9 +19,6 @@ function Navigation() {
 					<li className="nav-item">
 						<Link to="/Making">Making of</Link>
 					</li>
-					<li className="nav-item">
-						<Link to="/parallax">Parallax</Link>
-					</li>
 				</ul>
 			</nav>
 			<Outlet />

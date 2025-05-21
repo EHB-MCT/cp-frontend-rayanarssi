@@ -5,7 +5,7 @@ function PopularCard({ fairytale }) {
 		<div className="popular-card">
 			<div className="popular-image-wrapper">
 				<img
-					src={`${base}${fairytale.horizontal_cover}`}
+					src={`${base}${fairytale.thumbnail}`}
 					alt={fairytale.title_fairytale}
 					className="popular-image"
 				/>

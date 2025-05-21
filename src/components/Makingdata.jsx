@@ -6,7 +6,7 @@ function MakingData(item) {
 			<div className="making-data-container">
 				<img
 					className="banner"
-					src={`${base}${item.horizontal_cover}`}
+					src={`${base}${item.thumbnail}`}
 					alt="Banner"
 				/>
 				<div className="project-info">
