@@ -1,3 +1,5 @@
+import React, { useEffect, useRef } from "react";
+
 const Intro = () => {
 	const containerRef = useRef(null);
 	const base = import.meta.env.BASE_URL;
