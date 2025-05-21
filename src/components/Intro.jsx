@@ -1,6 +1,12 @@
 import React, { useEffect, useRef } from "react";
 
-const layers = [
+
+
+const Intro = () => {
+	const containerRef = useRef(null);
+	const base = import.meta.env.BASE_URL;
+	
+	const layers = [
 	"Cloud1_sky.png",
 	"Cloud2_sky.png",
 	"Cloud3_sky.png",
@@ -13,10 +19,6 @@ const layers = [
 	"2nd_line.png",
 	"3rd_line.png",
 ];
-
-const Intro = () => {
-	const containerRef = useRef(null);
-	const base = import.meta.env.BASE_URL;
 
 	useEffect(() => {
 		const handleScroll = () => {
