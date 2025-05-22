@@ -1,8 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const Outro = () => {
 	const [scrollY, setScrollY] = useState(0);
+	const noBtnRef = useRef(null);
+	const yesBtnRef = useRef(null);
+	const heartLoaderRef = useRef(null);
+	const resultContainerRef = useRef(null);
+	const gifResultRef = useRef(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -10,6 +15,32 @@ const Outro = () => {
 		};
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	useEffect(() => {
+		const noBtn = noBtnRef.current;
+
+		const handleMouseOver = () => {
+			noBtn.style.display = "none";
+		};
+
+		noBtn.addEventListener("mouseover", handleMouseOver);
+		return () => noBtn.removeEventListener("mouseover", handleMouseOver);
+	}, []);
+
+	useEffect(() => {
+		const yesBtn = yesBtnRef.current;
+
+		const handleClick = () => {
+			setTimeout(() => {
+				if (heartLoaderRef.current) heartLoaderRef.current.style.display = "none";
+				if (resultContainerRef.current) resultContainerRef.current.style.display = "inherit";
+				if (gifResultRef.current) gifResultRef.current.play?.();
+			}, 3000);
+		};
+
+		yesBtn.addEventListener("click", handleClick);
+		return () => yesBtn.removeEventListener("click", handleClick);
 	}, []);
 
 	return (
@@ -25,7 +56,6 @@ const Outro = () => {
 			}}
 		>
 			<div
-				id="outro"
 				style={{
 					position: "relative",
 					backgroundColor: "#F7B974",
@@ -34,7 +64,6 @@ const Outro = () => {
 					overflow: "hidden",
 				}}
 			>
-				{/* Question */}
 				<motion.div
 					style={{
 						position: "absolute",
@@ -54,10 +83,12 @@ const Outro = () => {
 							justifyContent: "center",
 							gap: "32px",
 							marginTop: "32px",
-                            fontSize: "30px",
+							fontSize: "30px",
+							position: "relative",
 						}}
 					>
 						<button
+							ref={yesBtnRef}
 							style={{
 								fontSize: "inherit",
 								padding: "16px 40px",
@@ -71,6 +102,7 @@ const Outro = () => {
 							Yes
 						</button>
 						<button
+							ref={noBtnRef}
 							style={{
 								fontSize: "inherit",
 								padding: "16px 40px",
@@ -85,6 +117,11 @@ const Outro = () => {
 						</button>
 					</div>
 				</motion.div>
+
+				{/* Hidden Elements for future logic */}
+				<div ref={heartLoaderRef} style={{ display: "none" }} />
+				<div ref={resultContainerRef} style={{ display: "none" }} />
+				<video ref={gifResultRef} style={{ display: "none" }} />
 			</div>
 		</div>
 	);

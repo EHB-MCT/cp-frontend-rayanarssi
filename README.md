@@ -8,6 +8,7 @@ Currently, two official plugins are available:
 - [Filter in react](https://retool.com/blog/filtering-data-in-react-filter-map-and-for-loops#filtering-in-react)
 - [Error to deploy](https://vite.dev/guide/static-deploy)
 - [Error to deploy Parallax](https://youtu.be/fuGu-Ponjf8?si=LMhyaossDNcPn9kv)
+- [ChatGPT-conversation for Yes-no button](https://chatgpt.com/share/682f7b92-0d04-8005-bfbb-cfc19604e462)
 
 ## Expanding the ESLint configuration
 
