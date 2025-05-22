@@ -5,9 +5,6 @@ const Outro = () => {
 	const [scrollY, setScrollY] = useState(0);
 	const noBtnRef = useRef(null);
 	const yesBtnRef = useRef(null);
-	const heartLoaderRef = useRef(null);
-	const resultContainerRef = useRef(null);
-	const gifResultRef = useRef(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -32,11 +29,7 @@ const Outro = () => {
 		const yesBtn = yesBtnRef.current;
 
 		const handleClick = () => {
-			setTimeout(() => {
-				if (heartLoaderRef.current) heartLoaderRef.current.style.display = "none";
-				if (resultContainerRef.current) resultContainerRef.current.style.display = "inherit";
-				if (gifResultRef.current) gifResultRef.current.play?.();
-			}, 3000);
+			window.scrollTo({ top: "-10vw", behavior: "smooth" });
 		};
 
 		yesBtn.addEventListener("click", handleClick);
@@ -117,11 +110,6 @@ const Outro = () => {
 						</button>
 					</div>
 				</motion.div>
-
-				{/* Hidden Elements for future logic */}
-				<div ref={heartLoaderRef} style={{ display: "none" }} />
-				<div ref={resultContainerRef} style={{ display: "none" }} />
-				<video ref={gifResultRef} style={{ display: "none" }} />
 			</div>
 		</div>
 	);
