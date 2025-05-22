@@ -118,6 +118,42 @@ const Scene3 = () => {
 					}}
 				/>
 
+				{/* Rock right */}
+				<motion.div
+					className="Rock"
+					style={{
+						position: "absolute",
+						top: "45  %",
+						right: "-25vw",
+						width: "60vw",
+						height: "55vh",
+						backgroundImage: `url(${base}/assets/Rock_right.png)`,
+						backgroundSize: "contain",
+						backgroundRepeat: "no-repeat",
+						zIndex: 6,
+					}}
+				/>
+
+				{/* Potion */}
+				<motion.div
+					className="Potion"
+					style={{
+						position: "absolute",
+						top: "40%",
+						left: "46%",
+						width: "30vw",
+						height: "30vh",
+						backgroundImage: `url(${base}/assets/Potion.png)`,
+						backgroundSize: "contain",
+						backgroundRepeat: "no-repeat",
+						zIndex: 6,
+					}}
+					onMouseEnter={() => {
+						const audio = new Audio(`${base}/assets/Witch_sound.mp3`);
+						audio.play();
+					}}
+				/>
+
 				{/* Tentacle left */}
 				<motion.div
 					className="Tentacle_left"
