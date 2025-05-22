@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const Scene1 = () => {
+const Scene2 = () => {
 	const [scroll, setScrollY] = useState(0);
 	const base = import.meta.env.BASE_URL;
 
@@ -15,7 +15,7 @@ const Scene1 = () => {
 
 	return (
 		<div
-			id="Scene1"
+			id="Scene2"
 			style={{
 				width: "100vw",
 				height: "100vh",
@@ -23,7 +23,7 @@ const Scene1 = () => {
 			}}
 		>
 			<div
-				id="Scene1"
+				id="Scene2"
 				style={{
 					width: "100vw",
 					height: "100vh",
@@ -171,7 +171,7 @@ const Scene1 = () => {
 					}}
 				/>
 
-                {/* Blue fish */}
+				{/* Blue fish */}
 				<motion.div
 					className="Blue_Fish"
 					style={{
@@ -203,7 +203,6 @@ const Scene1 = () => {
 					}}
 				/>
 
-                
 				{/* Purple fish  */}
 				<motion.div
 					className="Purple_Fish"
@@ -220,7 +219,7 @@ const Scene1 = () => {
 					}}
 				/>
 
-                {/* Purple fish  */}
+				{/* Purple fish  */}
 				<motion.div
 					className="Purple_Fish"
 					style={{
@@ -240,4 +239,4 @@ const Scene1 = () => {
 	);
 };
 
-export default Scene1;
+export default Scene2;
