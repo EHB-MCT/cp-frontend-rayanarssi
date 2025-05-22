@@ -1,13 +1,24 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const Scene1 = () => {
 	const [scroll, setScrollY] = useState(0);
+	const [hasEntered, setHasEntered] = useState(false);
+	const sceneRef = useRef(null);
 	const base = import.meta.env.BASE_URL;
 
 	useEffect(() => {
 		const handleScroll = () => {
 			setScrollY(window.scrollY);
+			// Get Scene1's top offset
+			if (sceneRef.current) {
+				const top = sceneRef.current.offsetTop;
+
+				// Trigger animation when entering Scene1 (50% from bottom)
+				if (window.scrollY + window.innerHeight * 0.5 >= top) {
+					setHasEntered(true);
+				}
+			}
 		};
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
@@ -16,6 +27,7 @@ const Scene1 = () => {
 	return (
 		<div
 			id="Scene1"
+			ref={sceneRef}
 			style={{
 				width: "100vw",
 				height: "100vh",
@@ -23,7 +35,6 @@ const Scene1 = () => {
 			}}
 		>
 			<div
-				id="Scene1"
 				style={{
 					width: "100vw",
 					height: "100vh",
@@ -38,14 +49,23 @@ const Scene1 = () => {
 					fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
 				}}
 			>
-				<p>
-					Deep in the ocean, a <br /> young mermaid dreamed <br />
-					of the human world.
-				</p>
+				<motion.p
+					initial={{ opacity: 0, y: 20 }}
+					animate={hasEntered ? { opacity: 1, y: 0 } : {}}
+					transition={{ delay: 0.3, duration: 1 }}
+				>
+					<p>
+						Deep in the ocean, a <br /> young mermaid dreamed <br />
+						of the human world.
+					</p>
+				</motion.p>
 
 				{/* Mermaid */}
 				<motion.div
 					className="Mermaid"
+					initial={{ x: "100vw" }}
+					animate={hasEntered ? { x: 0 } : {}}
+					transition={{ duration: 1.2 }}
 					style={{
 						position: "absolute",
 						top: "18%",
@@ -78,6 +98,9 @@ const Scene1 = () => {
 				{/* Pink Coral */}
 				<motion.div
 					className="Pink_Coral"
+					initial={{ x: -100, opacity: 0 }}
+					animate={hasEntered ? { x: 0, opacity: 1 } : {}}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						top: "65%",
@@ -94,6 +117,9 @@ const Scene1 = () => {
 				{/* Green Coral */}
 				<motion.div
 					className="Green_Coral"
+					initial={{ x: -100, opacity: 0 }}
+					animate={hasEntered ? { x: 0, opacity: 1 } : {}}
+					transition={{ duration: 1.1 }}
 					style={{
 						position: "absolute",
 						top: "55%",
@@ -110,6 +136,9 @@ const Scene1 = () => {
 				{/* Red Coral */}
 				<motion.div
 					className="Red_Coral"
+					initial={{ x: -100, opacity: 0 }}
+					animate={hasEntered ? { x: 0, opacity: 1 } : {}}
+					transition={{ duration: 1.2 }}
 					style={{
 						position: "absolute",
 						top: "30%",
@@ -126,6 +155,8 @@ const Scene1 = () => {
 				{/* Blue fish 1 */}
 				<motion.div
 					className="Blue_Fish_1"
+					animate={hasEntered ? { x: [0, 10, 0] } : {}}
+					transition={{ repeat: Infinity, duration: 2 }}
 					style={{
 						position: "absolute",
 						top: "75%",
@@ -142,6 +173,8 @@ const Scene1 = () => {
 				{/* Blue fish  */}
 				<motion.div
 					className="Blue_Fish_2"
+					animate={hasEntered ? { x: [0, -10, 0] } : {}}
+					transition={{ repeat: Infinity, duration: 2.5 }}
 					style={{
 						position: "absolute",
 						top: "82%",
@@ -158,6 +191,8 @@ const Scene1 = () => {
 				{/* Purple fish  */}
 				<motion.div
 					className="Purple_Fish"
+					animate={hasEntered ? { y: [0, -10, 0] } : {}}
+					transition={{ repeat: Infinity, duration: 2 }}
 					style={{
 						position: "absolute",
 						top: "15%",
@@ -171,10 +206,12 @@ const Scene1 = () => {
 					}}
 				/>
 
-               
-                {/* Bubble  */}
+				{/* Bubble  */}
 				<motion.div
 					className="Bubble"
+					initial={{ y: 20, opacity: 0 }}
+					animate={hasEntered ? { y: 0, opacity: 1 } : {}}
+					transition={{ duration: 1, delay: 0.5 }}
 					style={{
 						position: "absolute",
 						top: "45%",
