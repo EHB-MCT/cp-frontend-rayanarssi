@@ -1,29 +1,57 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const Scene2 = () => {
 	const [scroll, setScrollY] = useState(0);
+	const [hasEntered, setHasEntered] = useState(false);
+	const [droppedFish, setDroppedFish] = useState([]);
+	const boatDropZoneRef = useRef(null);
+	const sceneRef = useRef(null);
 	const base = import.meta.env.BASE_URL;
 
 	useEffect(() => {
 		const handleScroll = () => {
 			setScrollY(window.scrollY);
+
+			if (sceneRef.current) {
+				const top = sceneRef.current.offsetTop;
+				if (window.scrollY + window.innerHeight * 0.5 >= top) {
+					setHasEntered(true);
+				}
+			}
 		};
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
+	useEffect(() => {
+		document.body.style.overflow = droppedFish.length === 5 ? "" : "hidden";
+	}, [droppedFish]);
+
+	const handleFishDrop = (fishId, point) => {
+		if (!boatDropZoneRef.current) return;
+
+		const dropZoneRect = boatDropZoneRef.current.getBoundingClientRect();
+		const { x, y } = point;
+
+		const isInside =
+			x >= dropZoneRect.left &&
+			x <= dropZoneRect.right &&
+			y >= dropZoneRect.top &&
+			y <= dropZoneRect.bottom;
+
+		if (isInside && !droppedFish.includes(fishId)) {
+			setDroppedFish((prev) => [...prev, fishId]);
+		}
+	};
+
 	return (
 		<div
 			id="Scene2"
-			style={{
-				width: "100vw",
-				height: "100vh",
-				position: "relative",
-			}}
+			ref={sceneRef}
+			style={{ width: "100vw", height: "100vh", position: "relative" }}
 		>
 			<div
-				id="Scene2"
 				style={{
 					width: "100vw",
 					height: "100vh",
@@ -49,7 +77,7 @@ const Scene2 = () => {
 					style={{
 						position: "absolute",
 						bottom: "-15vw",
-						left: "50%",
+						left: "49%",
 						width: "100vw",
 						height: "65vh",
 						backgroundImage: `url(${base}/assets/Ground.png)`,
@@ -63,6 +91,9 @@ const Scene2 = () => {
 				{/* Boat */}
 				<motion.div
 					className="Boat"
+					initial={{ y: -200 }}
+					animate={{ y: hasEntered ? 0 : -200 }}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						top: "32%",
@@ -72,13 +103,29 @@ const Scene2 = () => {
 						backgroundImage: `url(${base}/assets/Boat.png)`,
 						backgroundSize: "contain",
 						backgroundRepeat: "no-repeat",
-						zIndex: 5,
+						zIndex: 7,
 					}}
-				/>
+				>
+					<div
+						ref={boatDropZoneRef}
+						style={{
+							position: "absolute",
+							bottom: "25%",
+							left: "30%",
+							width: "35%",
+							height: "25%",
+							zIndex: 10,
+							pointerEvents: "none",
+						}}
+					/>
+				</motion.div>
 
 				{/* Sinking prince */}
 				<motion.div
 					className="Sinking_prince"
+					initial={{ y: -200 }}
+					animate={{ y: hasEntered ? 0 : -200 }}
+					transition={{ duration: 1.2 }}
 					style={{
 						position: "absolute",
 						top: "30%",
@@ -155,85 +202,31 @@ const Scene2 = () => {
 					}}
 				/>
 
-				{/* Blue fish */}
-				<motion.div
-					className="Blue_Fish"
-					style={{
-						position: "absolute",
-						top: "75%",
-						left: "50vw",
-						width: "14vw",
-						height: "9vh",
-						backgroundImage: `url(${base}/assets/Blue_fish.png)`,
-						backgroundSize: "contain",
-						backgroundRepeat: "no-repeat",
-						zIndex: 8,
-					}}
-				/>
-
-				{/* Blue fish */}
-				<motion.div
-					className="Blue_Fish"
-					style={{
-						position: "absolute",
-						top: "82%",
-						left: "55vw",
-						width: "12vw",
-						height: "7vh",
-						backgroundImage: `url(${base}/assets/Blue_fish.png)`,
-						backgroundSize: "contain",
-						backgroundRepeat: "no-repeat",
-						zIndex: 8,
-					}}
-				/>
-
-				{/* Blue fish  */}
-				<motion.div
-					className="Blue_Fish_2"
-					style={{
-						position: "absolute",
-						top: "70%",
-						left: "55vw",
-						width: "12vw",
-						height: "7vh",
-						backgroundImage: `url(${base}/assets/Blue_fish.png)`,
-						backgroundSize: "contain",
-						backgroundRepeat: "no-repeat",
-						zIndex: 8,
-					}}
-				/>
-
-				{/* Purple fish  */}
-				<motion.div
-					className="Purple_Fish"
-					style={{
-						position: "absolute",
-						top: "15%",
-						left: "70vw",
-						width: "15vw",
-						height: "10vh",
-						backgroundImage: `url(${base}/assets/Purple_fish.png)`,
-						backgroundSize: "contain",
-						backgroundRepeat: "no-repeat",
-						zIndex: 8,
-					}}
-				/>
-
-				{/* Purple fish  */}
-				<motion.div
-					className="Purple_Fish"
-					style={{
-						position: "absolute",
-						top: "25%",
-						left: "75vw",
-						width: "12vw",
-						height: "7vh",
-						backgroundImage: `url(${base}/assets/Purple_fish.png)`,
-						backgroundSize: "contain",
-						backgroundRepeat: "no-repeat",
-						zIndex: 8,
-					}}
-				/>
+				{/* Fish - Draggable */}
+				{[
+					{ id: "purple1", top: "15%", left: "70vw" },
+					{ id: "purple2", top: "25%", left: "75vw" },
+				].map(({ id, top, left }) => (
+					<motion.div
+						key={id}
+						drag
+						onDragEnd={(e, info) =>
+							handleFishDrop(id, { x: info.point.x, y: info.point.y })
+						}
+						style={{
+							position: "absolute",
+							top,
+							left,
+							width: "13vw",
+							height: "8vh",
+							backgroundImage: `url(${base}/assets/Purple_fish.png)`,
+							backgroundSize: "contain",
+							backgroundRepeat: "no-repeat",
+							zIndex: 5,
+							cursor: "grab",
+						}}
+					/>
+				))}
 			</div>
 		</div>
 	);
