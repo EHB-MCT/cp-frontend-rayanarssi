@@ -105,20 +105,26 @@ const Scene2 = () => {
 						backgroundRepeat: "no-repeat",
 						zIndex: 7,
 					}}
-				>
-					<div
-						ref={boatDropZoneRef}
-						style={{
-							position: "absolute",
-							bottom: "25%",
-							left: "30%",
-							width: "35%",
-							height: "25%",
-							zIndex: 10,
-							pointerEvents: "none",
-						}}
-					/>
-				</motion.div>
+				/>
+
+				{/* Shark */}
+				<motion.div
+					className="Shark"
+					initial={{ x: 500 }}
+					animate={{ x: hasEntered ? 0 : 500 }}
+					transition={{ duration: 1 }}
+					style={{
+						position: "absolute",
+						top: "10%",
+						right: 0,
+						width: "20vw",
+						height: "20vh",
+						backgroundImage: `url(${base}/assets/Shark.png)`,
+						backgroundSize: "contain",
+						backgroundRepeat: "no-repeat",
+						zIndex: 7,
+					}}
+				/>
 
 				{/* Sinking prince */}
 				<motion.div
