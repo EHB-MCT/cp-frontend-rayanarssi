@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const Scene4 = () => {
 	const [scroll, setScrollY] = useState(0);
 	const [hasEntered, setHasEntered] = useState(false);
+	const [mermaidImage, setMermaidImage] = useState(null);
 	const sceneRef = useRef(null);
 	const base = import.meta.env.BASE_URL;
 
@@ -20,6 +21,17 @@ const Scene4 = () => {
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
+
+	useEffect(() => {
+		if (hasEntered) {
+			setMermaidImage(`${base}/assets/Smile_mermaid.png`);
+			const timer = setTimeout(() => {
+				setMermaidImage(`${base}/assets/Crying_Mermaid.png`);
+			}, 2500); // 2.5-second delay to change image
+
+			return () => clearTimeout(timer);
+		}
+	}, [hasEntered, base]);
 
 	return (
 		<div
@@ -78,7 +90,7 @@ const Scene4 = () => {
 					}}
 				/>
 
-				{/* Crying Mermaid */}
+				{/* Smiling/Crying Mermaid */}
 				<motion.div
 					className="Crying_Mermaid"
 					initial={{ x: "100vw" }}
@@ -90,7 +102,7 @@ const Scene4 = () => {
 						right: "-30vw",
 						width: "50vw",
 						height: "50vh",
-						backgroundImage: `url(${base}/assets/Crying_Mermaid.png)`,
+						backgroundImage: `url(${mermaidImage})`,
 						backgroundSize: "contain",
 						backgroundRepeat: "no-repeat",
 						zIndex: 5,
@@ -102,7 +114,7 @@ const Scene4 = () => {
 					className="Princess"
 					initial={{ x: "100vw" }}
 					animate={hasEntered ? { x: 0 } : {}}
-					transition={{ duration: 1.2, delay: 1.5 }}
+					transition={{ duration: 1.2, delay: 2 }}
 					style={{
 						position: "absolute",
 						top: "20%",
