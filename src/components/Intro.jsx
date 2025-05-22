@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 const Intro = () => {
 	const [scrollY, setScrollY] = useState(0);
@@ -50,6 +51,24 @@ const Intro = () => {
 						transform: `translateY(${scrollY * 0.1}px)`,
 					}}
 				/>
+
+				{/* Logo */}
+				<Link to="/Home">
+					<motion.div
+						className="Logo"
+						style={{
+							position: "absolute",
+							top: "2vw",
+							left: "2vw",
+							width: "7vw",
+							height: "7vh",
+							backgroundImage: `url(${base}/assets/Logo.png)`,
+							backgroundSize: "contain",
+							backgroundRepeat: "no-repeat",
+							zIndex: 8,
+						}}
+					/>
+				</Link>
 
 				{/* Title */}
 				<motion.div

@@ -47,7 +47,7 @@ const Scene4 = () => {
 			<div
 				id="Scene4"
 				style={{
-					top: "10vw",
+					top: "17vw",
 					width: "100vw",
 					height: "100vh",
 					position: "relative",
@@ -85,6 +85,23 @@ const Scene4 = () => {
 						backgroundImage: `url(${base}/assets/Beach.png)`,
 						backgroundSize: "contain",
 						backgroundRepeat: "no-repeat",
+						zIndex: 1,
+						transform: `translate(-50%, ${scrollY * 0.1}px)`,
+					}}
+				/>
+
+				{/* Stars */}
+				<motion.div
+					className="Stars"
+					style={{
+						position: "absolute",
+						bottom: "27vw",
+						left: "110vw",
+						width: "220vw",
+						height: "100vh",
+						backgroundImage: `url(${base}/assets/Stars.png)`,
+						backgroundSize: "contain",
+						backgroundRepeat: "repeat",
 						zIndex: 1,
 						transform: `translate(-50%, ${scrollY * 0.1}px)`,
 					}}
