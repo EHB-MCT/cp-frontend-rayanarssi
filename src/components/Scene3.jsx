@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Scene3 = () => {
 	const [scroll, setScrollY] = useState(0);
@@ -115,22 +115,6 @@ const Scene3 = () => {
 					onMouseEnter={() => {
 						const audio = new Audio(`${base}/assets/Witch_sound.mp3`);
 						audio.play();
-					}}
-				/>
-
-				{/* Rock right */}
-				<motion.div
-					className="Rock"
-					style={{
-						position: "absolute",
-						top: "45  %",
-						right: "-25vw",
-						width: "60vw",
-						height: "55vh",
-						backgroundImage: `url(${base}/assets/Rock_right.png)`,
-						backgroundSize: "contain",
-						backgroundRepeat: "no-repeat",
-						zIndex: 6,
 					}}
 				/>
 
