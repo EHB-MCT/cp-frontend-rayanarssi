@@ -7,6 +7,16 @@ body {
 	align-items: center;
 }
 
+html,
+body {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
 /*
 Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 */

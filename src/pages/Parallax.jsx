@@ -7,7 +7,7 @@ import Outro from "../components/Outro";
 
 function Parallax() {
 	return (
-		<div style={{ overflowX: "hidden" }}>
+		<div style={{ overflowX: "hidden", marginLeft: "-12vw" }}>
 			<Intro />
 			<Scene1 />
 			<Scene2 />
