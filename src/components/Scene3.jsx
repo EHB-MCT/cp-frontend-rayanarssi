@@ -51,6 +51,7 @@ const Scene3 = () => {
 				<p
 					style={{
 						marginTop: "35vw",
+						zIndex: 2,
 					}}
 				>
 					Desperate to be with him, she made a deal with the <br /> Sea Witch.

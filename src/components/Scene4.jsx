@@ -1,13 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const Scene4 = () => {
 	const [scroll, setScrollY] = useState(0);
+	const [hasEntered, setHasEntered] = useState(false);
+	const sceneRef = useRef(null);
 	const base = import.meta.env.BASE_URL;
 
 	useEffect(() => {
 		const handleScroll = () => {
 			setScrollY(window.scrollY);
+			if (sceneRef.current) {
+				const top = sceneRef.current.offsetTop;
+				if (window.scrollY + window.innerHeight * 0.5 >= top) {
+					setHasEntered(true);
+				}
+			}
 		};
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
@@ -16,10 +24,12 @@ const Scene4 = () => {
 	return (
 		<div
 			id="Scene4"
+			ref={sceneRef}
 			style={{
 				width: "100vw",
 				height: "100vh",
 				position: "relative",
+				backgroundColor: "#1A0F4A",
 			}}
 		>
 			<div
@@ -71,6 +81,9 @@ const Scene4 = () => {
 				{/* Crying Mermaid */}
 				<motion.div
 					className="Crying_Mermaid"
+					initial={{ x: "100vw" }}
+					animate={hasEntered ? { x: 0 } : {}}
+					transition={{ duration: 1.2 }}
 					style={{
 						position: "absolute",
 						top: "25%",
@@ -87,6 +100,9 @@ const Scene4 = () => {
 				{/* Princess */}
 				<motion.div
 					className="Princess"
+					initial={{ x: "100vw" }}
+					animate={hasEntered ? { x: 0 } : {}}
+					transition={{ duration: 1.2, delay: 1.5 }}
 					style={{
 						position: "absolute",
 						top: "20%",
@@ -103,6 +119,9 @@ const Scene4 = () => {
 				{/* Marry Prince */}
 				<motion.div
 					className="Marry prince"
+					initial={{ x: "-100vw" }}
+					animate={hasEntered ? { x: 0 } : {}}
+					transition={{ duration: 1.2 }}
 					style={{
 						position: "absolute",
 						top: "35%",
@@ -119,6 +138,9 @@ const Scene4 = () => {
 				{/* Moon  */}
 				<motion.div
 					className="Moon"
+					initial={{ x: "-100vw" }}
+					animate={hasEntered ? { x: 0 } : {}}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						top: "1%",
