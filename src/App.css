@@ -131,7 +131,7 @@ h2 {
 	font-size: 20px;
 	padding: 5px;
 	padding-left: 20px;
-	padding-right: 70px;
+	padding-right: 50px;
 }
 
 .navigation-bar .nav-item a:hover {
@@ -228,7 +228,8 @@ h2 {
 }
 
 .about-button:hover {
-	background-color: #e51131;
+	background-color: #b9031e;
+	color: white;
 }
 
 .students-section {
