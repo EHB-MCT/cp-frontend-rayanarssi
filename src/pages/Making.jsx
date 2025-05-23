@@ -7,6 +7,7 @@ function Making() {
 	const [fairytales, setFairytales] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedOption, setSelectedOption] = useState(null);
+	const [isLoading, setIsLoading] = useState(true);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -16,6 +17,7 @@ function Making() {
 				);
 				const data = await res.json();
 				setFairytales(data);
+				setIsLoading(false);
 
 				if (!id && data.length > 0) {
 					const randomFairytale = data[Math.floor(Math.random() * data.length)];
@@ -23,6 +25,7 @@ function Making() {
 				}
 			} catch (error) {
 				console.error("Failed to fetch fairytales:", error);
+				setIsLoading(false);
 			}
 		};
 
@@ -39,7 +42,7 @@ function Making() {
 			<div className="making-page">
 				<h1>Making of</h1>
 				{story ? (
-					<MakingData {...story} />
+					<MakingData id={story.id} />
 				) : (
 					<p>Story not found for ID: {id}</p>
 				)}
@@ -65,14 +68,16 @@ function Making() {
 								onClick={() => setSelectedOption(item)}
 								className="dropdown-item"
 							>
-								{itemfairytale}
+								{item.fairytale}
 							</li>
 						))}
 					</ul>
 				)}
 			</div>
 
-			{selectedOption ? (
+			{isLoading ? (
+				<p>Loading...</p>
+			) : selectedOption ? (
 				<div className="component">
 					<MakingData id={selectedOption.id} />
 				</div>

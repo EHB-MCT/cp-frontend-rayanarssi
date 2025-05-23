@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Portal from "../components/Portal";
 import SearchFilter from "../components/SearchFilter";
 
-function Portalpage({ data }) {
+function Portalpage() {
+	const [data, setData] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedGenre, setSelectedGenre] = useState("");
+	const [isLoading, setIsLoading] = useState(true);
 
-		useEffect(() => {
+	useEffect(() => {
 		const fetchData = async () => {
 			try {
 				const res = await fetch(
@@ -14,8 +16,10 @@ function Portalpage({ data }) {
 				);
 				const result = await res.json();
 				setData(result);
+				setIsLoading(false);
 			} catch (error) {
 				console.error("Failed to fetch data:", error);
+				setIsLoading(false);
 			}
 		};
 
