@@ -1,23 +1,27 @@
 import { useState, useEffect } from "react";
 import PopularCard from "./PopularCard";
-import data from "../api/fairytales.json";
 import "../App.css";
 
 function Popular() {
 	const [randomItems, setRandomItems] = useState([]);
 
-	const getRandomItems = () => {
-		const shuffled = [...data].sort(() => 0.5 - Math.random());
-		return shuffled.slice(0, 3);
-	};
-
 	useEffect(() => {
-		setRandomItems(getRandomItems());
+		const fetchData = async () => {
+			try {
+				const res = await fetch(
+					"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/api/fairytaleList.json"
+				);
+				const data = await res.json();
+				const shuffled = [...data].sort(() => 0.5 - Math.random());
+				setRandomItems(shuffled.slice(0, 3));
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			}
+		};
 
-		const interval = setInterval(() => {
-			setRandomItems(getRandomItems());
-		}, 5000);
+		fetchData();
 
+		const interval = setInterval(fetchData, 5000);
 		return () => clearInterval(interval);
 	}, []);
 

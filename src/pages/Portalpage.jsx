@@ -6,14 +6,14 @@ function Portalpage({ data }) {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedGenre, setSelectedGenre] = useState("");
 
-	const genres = [...new Set(data.map((item) => item.Genre))];
+	const genres = [...new Set(data.map((item) => item.genre))];
 
 	const filteredData = data.filter((item) => {
-		const matchesTitle = item.title_fairytale
+		const matchesTitle = item.fairytale
 			.toLowerCase()
 			.includes(searchTerm.toLowerCase());
 		const matchesGenre = selectedGenre
-			? item.Genre.toLowerCase() === selectedGenre.toLowerCase()
+			? item.genre.toLowerCase() === selectedGenre.toLowerCase()
 			: true;
 		return matchesTitle && matchesGenre;
 	});
@@ -31,8 +31,9 @@ function Portalpage({ data }) {
 					<Portal
 						key={item.id}
 						id={item.id}
-						thumbnail={item.thumbnail}
-						title_fairytale={item.title_fairytale}
+						thumbnail={item.imgThumbnail}
+						title_fairytale={item.fairytale}
+						link={item.fairytaleLink}
 					/>
 				))}
 			</div>

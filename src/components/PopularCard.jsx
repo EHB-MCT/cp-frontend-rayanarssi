@@ -1,22 +1,24 @@
 function PopularCard({ fairytale }) {
-		const base = import.meta.env.BASE_URL;
-
 	return (
 		<div className="popular-card">
 			<div className="popular-image-wrapper">
-				<img
-					src={`${base}${fairytale.thumbnail}`}
-					alt={fairytale.title_fairytale}
-					className="popular-image"
-				/>
+				<a
+					href={fairytale.fairytaleLink}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src={fairytale.imgThumbnail}
+						alt={fairytale.fairytale}
+						className="popular-image"
+					/>
+				</a>
 			</div>
 			<div className="card-content">
 				<p className="card-title">
-					<strong>{fairytale.title_fairytale}</strong>
+					<strong>{fairytale.fairytale}</strong>
 				</p>
-				<p className="card-author">
-					{fairytale.surname} {fairytale.name}
-				</p>
+				<p className="card-author">{fairytale.nameStudent}</p>
 			</div>
 		</div>
 	);
