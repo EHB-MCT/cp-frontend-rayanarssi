@@ -6,7 +6,23 @@ function Portalpage({ data }) {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedGenre, setSelectedGenre] = useState("");
 
-	const genres = [...new Set(data.map((item) => item.genre))];
+		useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const res = await fetch(
+					"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/api/fairytaleList.json"
+				);
+				const result = await res.json();
+				setData(result);
+			} catch (error) {
+				console.error("Failed to fetch data:", error);
+			}
+		};
+
+		fetchData();
+	}, []);
+
+	const genres = [...new Set(data.map((item) => item.genre).filter(Boolean))];
 
 	const filteredData = data.filter((item) => {
 		const matchesTitle = item.fairytale

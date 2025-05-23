@@ -1,15 +1,13 @@
 import { Link } from "react-router";
 
-function Portal({ id, thumbnail, title_fairytale }) {
-		const base = import.meta.env.BASE_URL;
-
+function Portal({ id, imgThumbnail, fairytale }) {
 	return (
 		<div className="portal-card">
 			<Link to={`/making/${id}`}>
-				<img src={`${base}${thumbnail}`} alt={title_fairytale} />
+				<img src={imgThumbnail} alt={title_fairytale} />
 			</Link>
 			<div className="portal-content">
-				<h2>{title_fairytale}</h2>
+				<h2>{fairytale}</h2>
 			</div>
 		</div>
 	);
