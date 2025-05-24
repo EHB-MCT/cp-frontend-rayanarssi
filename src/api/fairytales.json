@@ -1,80 +1,184 @@
 [
 	{
-		"id": 1,
-		"surname": "Rayan",
-		"name": "Arssi",
-		"title_fairytale": "The Little Mermaid",
-		"Genre": "Fantasy",
-		"student": "assets/Student.png",
-		"thumbnail": "assets/thumbnail.png",
-		"website": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
-		"banner": "assets/Banner.png",
-		"description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar.",
-		"video": "https://www.youtube.com/watch?v=5Ix_C2zgjPc&ab_channel=ErasmushogeschoolBrussel"
+		"id": "jordi-de-leeuw-alice-in-wonderland",
+		"nameStudent": "Jordi ",
+		"fnameStudent": "De Leeuw",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
-		"id": 2,
-		"surname": "Rayan",
-		"name": "Arssi",
-		"title_fairytale": "The Little Mermaid",
-		"Genre": "Fantasy",
-		"student": "assets/Student.png",
-		"thumbnail": "assets/thumbnail.png",
-		"website": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
-		"banner": "assets/Banner.png",
-		"description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar.",
-		"video": "https://www.youtube.com/watch?v=5Ix_C2zgjPc&ab_channel=ErasmushogeschoolBrussel"
+		"id": "pema-bhutia-coraline",
+		"nameStudent": "Pema ",
+		"fnameStudent": "Bhutia",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
-		"id": 3,
-		"surname": "Rayan",
-		"name": "Arssi",
-		"title_fairytale": "The Little Mermaid",
-		"Genre": "Fantasy",
-		"student": "assets/Student.png",
-		"thumbnail": "assets/thumbnail.png",
-		"website": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
-		"banner": "assets/Banner.png",
-		"description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar.",
-		"video": "https://www.youtube.com/watch?v=5Ix_C2zgjPc&ab_channel=ErasmushogeschoolBrussel"
+		"id": "sophia-rahmoun-roodkapje",
+		"nameStudent": "Sophia ",
+		"fnameStudent": "Rahmoun",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-SophiaRahmoun/fairytale",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
-		"id": 4,
-		"surname": "Rayan",
-		"name": "Arssi",
-		"title_fairytale": "The Little Mermaid",
-		"Genre": "Fantasy",
-		"student": "assets/Student.png",
-		"thumbnail": "assets/thumbnail.png",
-		"website": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
-		"banner": "assets/Banner.png",
-		"description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar.",
-		"video": "https://www.youtube.com/watch?v=5Ix_C2zgjPc&ab_channel=ErasmushogeschoolBrussel"
+		"id": "wout-van-impe-blauwbaard",
+		"nameStudent": "Wout ",
+		"fnameStudent": "Van Impe",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
-		"id": 5,
-		"surname": "Rayan",
-		"name": "Arssi",
-		"title_fairytale": "The Little Mermaid",
-		"Genre": "Fantasy",
-		"student": "assets/Student.png",
-		"thumbnail": "assets/thumbnail.png",
-		"website": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
-		"banner": "assets/Banner.png",
-		"description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar.",
-		"video": "https://www.youtube.com/watch?v=5Ix_C2zgjPc&ab_channel=ErasmushogeschoolBrussel"
+		"id": "sam-hoeterickx-de-wolf-en-de-3-biggetjes",
+		"nameStudent": "Sam ",
+		"fnameStudent": "Hoeterickx",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-Sam-Hoeterickx/#/fairy-tale",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
-		"id": 6,
-		"surname": "Rayan",
-		"name": "Arssi",
-		"title_fairytale": "The Little Mermaid",
-		"Genre": "Fantasy",
-		"student": "assets/Student.png",
-		"thumbnail": "assets/thumbnail.png",
-		"website": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
-		"banner": "assets/Banner.png",
-		"description": "A young mermaid princess, longing for a life beyond the sea, makes a dangerous Faustian bargain with a sea witch, trading her voice for the chance to become human and win the love of a prince she has secretly admired from afar.",
-		"video": "https://www.youtube.com/watch?v=5Ix_C2zgjPc&ab_channel=ErasmushogeschoolBrussel"
+		"id": "rayan-arssi-de-kleine-zeemeermin",
+		"nameStudent": "Rayan ",
+		"fnameStudent": "Arssi",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-rayanarssi/parallax",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "manal-boulahya-the-tale-of-the-princes-kaguya",
+		"nameStudent": "Manal ",
+		"fnameStudent": "Boulahya",
+        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-Manal0307/parallax",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
+	},
+	{
+		"id": "younes-ben-ali-aladin-en-de-wonderlamp",
+		"nameStudent": "Younes ",
+		"fnameStudent": "Ben Ali",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-YounesEHB2023/Parallax",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "arno-baeck-hans-en-grietje",
+		"nameStudent": "Arno ",
+		"fnameStudent": "Baeck",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "rey-mammadbeyli-hercules",
+		"nameStudent": "Rey ",
+		"fnameStudent": "Mammadbeyli",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "ramon-de-raes-de-wolf-en-de-3-biggetjes",
+		"nameStudent": "Ramon ",
+		"fnameStudent": "De Raes",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "laura-ocampo-peter-pan",
+		"nameStudent": "Laura ",
+		"fnameStudent": "Ocampo",
+        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-NinaBreedstraet/deWaternimfInDeVijver",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
+	},
+	{
+		"id": "matteo-giambarresi-de-raaf-en-de-vos",
+		"nameStudent": "Matteo ",
+		"fnameStudent": "Giambarresi",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "nordine-el-ouafrasi-belle-en-het-beest",
+		"nameStudent": "Nordine ",
+		"fnameStudent": "El Ouafrasi",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "joel-lopez-mendez-raponsje",
+		"nameStudent": "Joel ",
+		"fnameStudent": "Lopez Mendez",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "nina-breedstraet-de-waternimf-in-de-vijver",
+		"nameStudent": "Nina ",
+		"fnameStudent": "Breedstraet",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
+	},
+	{
+		"id": "luca-lattuca-de-tovenaar-van-oz",
+		"nameStudent": "Luca ",
+		"fnameStudent": "Lattuca",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "fleur-van-de-ville-rapunzel",
+		"nameStudent": "Fleur ",
+		"fnameStudent": "Van De Ville",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
+	},
+	{
+		"id": "beatrice-bjoko-de-vuurvogel",
+		"nameStudent": "Béatrice ",
+		"fnameStudent": "Bjoko",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
+	},
+	{
+		"id": "siriyakorn-klaklang-duimelijntje",
+		"nameStudent": "Siriyakorn ",
+		"fnameStudent": "Klaklang",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
+	},
+	{
+		"id": "ernest-marot-na",
+		"nameStudent": "Ernest ",
+		"fnameStudent": "Marot",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "maxim-westerbeek-duimelijntje",
+		"nameStudent": "Maxim ",
+		"fnameStudent": "Westerbeek",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "seppe-ghekiere-de-witte-slang",
+		"nameStudent": "Seppe ",
+		"fnameStudent": "Ghekiere",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "staf-dierickx-aladin-en-de-wonderlamp",
+		"nameStudent": "Staf ",
+		"fnameStudent": "Dierickx",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "eren-sahbaz-keloglan",
+		"nameStudent": "Eren ",
+		"fnameStudent": "Sahbaz",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ErenSahbaz1/#/cp-frontend-ErenSahbaz1/parallax",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
+	},
+	{
+		"id": "igor-lopes-oliveira-jaap-en-de-bonenstaak",
+		"nameStudent": "Igor ",
+		"fnameStudent": "Lopes Oliveira",
+		"fairytaleLink": "",
+		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	}
 ]
