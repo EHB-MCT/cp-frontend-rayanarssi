@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Portal from "../components/Portal";
 import SearchFilter from "../components/SearchFilter";
 
@@ -39,23 +39,29 @@ function Portalpage() {
 	});
 
 	return (
-		<section className="popullar-section">
+		<section className="popular-section">
 			<SearchFilter
 				onSearch={setSearchTerm}
 				onGenreChange={setSelectedGenre}
 				genres={genres}
 			/>
 
+			<h1 className="portal-title-main">
+				ALL <span className="highlight">STUNNING</span> <br />
+				PROJECTS
+			</h1>
+
 			<div className="portal-grid">
-				{filteredData.map((item) => (
-					<Portal
-						key={item.id}
-						id={item.id}
-						thumbnail={item.imgThumbnail}
-						title_fairytale={item.fairytale}
-						link={item.fairytaleLink}
-					/>
-				))}
+				{filteredData.map((item) => {
+					return (
+						<Portal
+							key={item.id}
+							id={item.id}
+							imgThumbnail={item.imgThumbnail}
+							fairytale={item.fairytale}
+						/>
+					);
+				})}
 			</div>
 		</section>
 	);

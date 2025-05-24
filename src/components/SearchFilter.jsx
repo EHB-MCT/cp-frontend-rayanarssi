@@ -2,7 +2,7 @@ import React from "react";
 
 function SearchFilter({ onSearch, onGenreChange, genres = [] }) {
     return (
-        <div className="filter-container">
+        <div className="search-filter-container">
             <input
                 type="text"
                 placeholder="Search by title..."
@@ -11,7 +11,7 @@ function SearchFilter({ onSearch, onGenreChange, genres = [] }) {
             />
 
             <select onChange={(e) => onGenreChange(e.target.value)} className="genre-select">
-                <option value="">All Genres</option>
+                <option value="">Categorie</option>
                 {genres.map((genre, index) => (
                     <option key={index} value={genre}>
                         {genre}

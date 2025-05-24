@@ -23,9 +23,9 @@ Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 
 .portal-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
-	padding: 0.5rem;
+
 }
 
 /* Card style */
@@ -41,6 +41,8 @@ Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 	width: 100%;
 	height: 200px;
 	padding: 10px;
+	object-fit: cover;
+
 	border-radius: 20px;
 }
 
@@ -59,10 +61,11 @@ Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 }
 
 .portal-title {
-	font-size: 1.1rem;
+	font-size: 16px;
 	font-weight: 600;
 	color: #1e1e1e;
-	margin: 0.5rem 0 0.2rem;
+	margin: 0;
+	text-align: left;
 }
 
 img {
@@ -175,6 +178,26 @@ h2 {
 
 .popular-image-wrapper {
 	position: relative;
+}
+
+.genre-select {
+	padding: 0.75rem 1rem;
+	border-radius: 10px;
+	border: 2px solid #ccc;
+	font-size: 16px;
+}
+
+.portal-title-main {
+	font-family: "Bungee", sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	margin: 2rem 0 1rem;
+	text-align: left;
+	color: #000;
+}
+
+.portal-title-main .highlight {
+	color: #e1003c;
 }
 
 .popular-image {
@@ -324,6 +347,24 @@ img.banner {
 	position: relative;
 	width: 300px;
 	margin-bottom: 20px;
+}
+
+.search-input {
+	flex: 1;
+	padding: 0.75rem 1rem;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	font-size: 16px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.search-filter-container {
+	display: flex;
+	gap: 1rem;
+	margin: 1.5rem 0;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 input {
