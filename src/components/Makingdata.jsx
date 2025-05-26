@@ -56,6 +56,16 @@ function MakingData({ id }) {
 					</a>
 				</div>
 			</div>
+			{item.imgsExtra && item.imgsExtra.length > 0 && (
+				<div className="extra-footage">
+					<h3>Extra Images</h3>
+					<div className="extra-images">
+						{item.imgsExtra.map((url, index) => (
+							<img key={index} src={url} alt={`Extra ${index + 1}`} />
+						))}
+					</div>
+				</div>
+			)}
 		</>
 	);
 }

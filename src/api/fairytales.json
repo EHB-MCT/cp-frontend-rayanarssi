@@ -45,7 +45,7 @@
 		"id": "manal-boulahya-the-tale-of-the-princes-kaguya",
 		"nameStudent": "Manal ",
 		"fnameStudent": "Boulahya",
-        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-Manal0307/parallax",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-Manal0307/parallax",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
@@ -80,20 +80,13 @@
 		"id": "laura-ocampo-peter-pan",
 		"nameStudent": "Laura ",
 		"fnameStudent": "Ocampo",
-        "fairytaleLink": "https://ehb-mct.github.io/cp-frontend-NinaBreedstraet/deWaternimfInDeVijver",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-NinaBreedstraet/deWaternimfInDeVijver",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
 		"id": "matteo-giambarresi-de-raaf-en-de-vos",
 		"nameStudent": "Matteo ",
 		"fnameStudent": "Giambarresi",
-		"fairytaleLink": "",
-		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
-	},
-	{
-		"id": "nordine-el-ouafrasi-belle-en-het-beest",
-		"nameStudent": "Nordine ",
-		"fnameStudent": "El Ouafrasi",
 		"fairytaleLink": "",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
@@ -138,13 +131,6 @@
 		"fnameStudent": "Klaklang",
 		"fairytaleLink": "",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
-	},
-	{
-		"id": "ernest-marot-na",
-		"nameStudent": "Ernest ",
-		"fnameStudent": "Marot",
-		"fairytaleLink": "",
-		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "maxim-westerbeek-duimelijntje",

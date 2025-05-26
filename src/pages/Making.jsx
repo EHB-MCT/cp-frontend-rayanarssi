@@ -59,6 +59,7 @@ function Making() {
 					placeholder="Search for a fairytale..."
 					value={searchTerm}
 					onChange={(e) => setSearchTerm(e.target.value)}
+					className="search-input2"
 				/>
 				{searchTerm && (
 					<ul className="dropdown">

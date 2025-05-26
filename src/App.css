@@ -25,7 +25,6 @@ Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
-
 }
 
 /* Card style */
@@ -76,8 +75,9 @@ img {
 
 h1 {
 	font-family: "Bungee Regular", sans-serif;
-	font-weight: 400;
-	font-size: 40px;
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: #000;
 }
 
 h2 {
@@ -141,7 +141,7 @@ h2 {
 	background-color: #e51131;
 	border-radius: 7px 0px 0px 7px;
 	transition: background-color 0.2s ease;
-	color: white;
+	color: #ebf5ec;
 }
 
 /*About Us*/
@@ -151,6 +151,7 @@ h2 {
 }
 
 .section-title {
+	color: #000000;
 	font-size: 2.5rem;
 	font-weight: 900;
 	margin-top: 0.5rem;
@@ -158,7 +159,7 @@ h2 {
 }
 
 .popular-section {
-	padding: 2.5rem 0rem;
+	padding: 2rem 0rem;
 }
 
 .popular-list {
@@ -169,7 +170,7 @@ h2 {
 
 .popular-card {
 	position: relative;
-	background: white;
+	background: #ebf5ec;
 	border-radius: 1rem;
 	width: 23rem;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -197,7 +198,7 @@ h2 {
 }
 
 .portal-title-main .highlight {
-	color: #e1003c;
+	color: #e51131;
 }
 
 .popular-image {
@@ -241,7 +242,7 @@ h2 {
 
 .about-button {
 	background-color: #e51131;
-	color: white;
+	color: #ebf5ec;
 	padding: 0.75rem 1.5rem;
 	border-radius: 0.75rem;
 	font-weight: 600;
@@ -281,7 +282,7 @@ h2 {
 	height: 150px;
 	object-fit: cover;
 	border-radius: 10px;
-	margin-bottom: 0.75rem;
+	margin-bottom: 2rem;
 	cursor: pointer;
 }
 
@@ -331,14 +332,14 @@ img.banner {
 
 .label {
 	font-size: px;
-	color: #555;
+	color: #000000;
 	font-weight: 600;
 	margin: 0;
 }
 
 .value {
 	font-size: 18px;
-	color: #111;
+	color: #000000;
 	font-weight: 500;
 	margin: 0;
 }
@@ -359,6 +360,14 @@ img.banner {
 	width: 100%;
 }
 
+.search-input2 {
+	padding: 0.75rem 1rem;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 375%;
+}
+
 .search-filter-container {
 	display: flex;
 	gap: 1rem;
@@ -377,7 +386,7 @@ input {
 .dropdown {
 	position: absolute;
 	width: 100%;
-	background: white;
+	background: #ebf5ec;
 	border: 1px solid #ccc;
 	max-height: 200px;
 	overflow-y: auto;
@@ -401,7 +410,7 @@ input {
 	display: flex;
 	gap: 50px;
 	margin-top: 30px;
-	margin-left: -200px;
+	margin-left: 0px;
 	flex-wrap: wrap;
 }
 
@@ -413,16 +422,19 @@ input {
 
 .description-section {
 	flex: 1;
-	max-width: 400px;
+	max-width: 450px;
 }
 
 .description-section h3 {
+	margin-top: -10px;
 	margin-bottom: 10px;
 }
 
 .description-section p {
 	font-size: 14px;
 	line-height: 1.6;
+	margin-bottom: 30px;
+	width: 110%;
 }
 
 .discover-link {
@@ -436,6 +448,7 @@ input {
 .extra-footage {
 	margin-top: 40px;
 	width: 100%;
+	margin-bottom: 30px;
 }
 
 .extra-footage h3 {
