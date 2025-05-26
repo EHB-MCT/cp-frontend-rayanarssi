@@ -25,6 +25,7 @@ Colors: #EBF5EC, #E51131, #000000, #CFE1D1
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
+	min-height: 60vh;
 }
 
 /* Card style */
@@ -160,6 +161,7 @@ h2 {
 
 .popular-section {
 	padding: 2rem 0rem;
+	min-height: 50vh;
 }
 
 .popular-list {
@@ -228,6 +230,7 @@ h2 {
 	padding: 3rem 2rem;
 	border-radius: 2rem;
 	margin-top: 3rem;
+	margin-bottom: 2rem;
 }
 
 .highlight {
@@ -257,7 +260,7 @@ h2 {
 }
 
 .students-section {
-	margin-top: 2rem;
+	margin-top: 4rem;
 }
 
 .section-subtitle {
@@ -331,10 +334,10 @@ img.banner {
 }
 
 .label {
-	font-size: px;
+	font-size: 14px;
 	color: #000000;
-	font-weight: 600;
-	margin: 0;
+	font-weight: 400;
+	margin: -10px;
 }
 
 .value {
