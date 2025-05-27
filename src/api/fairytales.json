@@ -3,14 +3,14 @@
 		"id": "jordi-de-leeuw-alice-in-wonderland",
 		"nameStudent": "Jordi ",
 		"fnameStudent": "De Leeuw",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-JordiDeLeeuw/#/fairytale",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "pema-bhutia-coraline",
 		"nameStudent": "Pema ",
 		"fnameStudent": "Bhutia",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-PemaBhutia2005/parallax",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
@@ -24,7 +24,7 @@
 		"id": "wout-van-impe-blauwbaard",
 		"nameStudent": "Wout ",
 		"fnameStudent": "Van Impe",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-WoutVanImpe/#/fairytale",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
@@ -59,21 +59,21 @@
 		"id": "arno-baeck-hans-en-grietje",
 		"nameStudent": "Arno ",
 		"fnameStudent": "Baeck",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ArnoBaeck/#/fairytale",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "rey-mammadbeyli-hercules",
 		"nameStudent": "Rey ",
 		"fnameStudent": "Mammadbeyli",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-ramon337/#/fairytale",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "ramon-de-raes-de-wolf-en-de-3-biggetjes",
 		"nameStudent": "Ramon ",
 		"fnameStudent": "De Raes",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-RamonDeRaes/#/fairytale",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
@@ -87,42 +87,42 @@
 		"id": "matteo-giambarresi-de-raaf-en-de-vos",
 		"nameStudent": "Matteo ",
 		"fnameStudent": "Giambarresi",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-MatteoGiambarresi/parallax",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "joel-lopez-mendez-raponsje",
 		"nameStudent": "Joel ",
 		"fnameStudent": "Lopez Mendez",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-JoelLopezMendez/",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "nina-breedstraet-de-waternimf-in-de-vijver",
 		"nameStudent": "Nina ",
 		"fnameStudent": "Breedstraet",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-NinaBreedstraet/deWaternimfInDeVijver",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
 		"id": "luca-lattuca-de-tovenaar-van-oz",
 		"nameStudent": "Luca ",
 		"fnameStudent": "Lattuca",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-LucaLattuca/#/story",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "fleur-van-de-ville-rapunzel",
 		"nameStudent": "Fleur ",
 		"fnameStudent": "Van De Ville",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-FleurVanDeVille/#/sprookje",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
 		"id": "beatrice-bjoko-de-vuurvogel",
 		"nameStudent": "Béatrice ",
 		"fnameStudent": "Bjoko",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-BeatriceBjoko/sprookje",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076147/Woman_fkhdtz.png"
 	},
 	{
@@ -136,21 +136,21 @@
 		"id": "maxim-westerbeek-duimelijntje",
 		"nameStudent": "Maxim ",
 		"fnameStudent": "Westerbeek",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-MaximWesterbeek/parallaxPage",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "seppe-ghekiere-de-witte-slang",
 		"nameStudent": "Seppe ",
 		"fnameStudent": "Ghekiere",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-SeppeGhekiere/#/fairytale",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
 		"id": "staf-dierickx-aladin-en-de-wonderlamp",
 		"nameStudent": "Staf ",
 		"fnameStudent": "Dierickx",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-StafDierickx/",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	},
 	{
@@ -164,7 +164,7 @@
 		"id": "igor-lopes-oliveira-jaap-en-de-bonenstaak",
 		"nameStudent": "Igor ",
 		"fnameStudent": "Lopes Oliveira",
-		"fairytaleLink": "",
+		"fairytaleLink": "https://ehb-mct.github.io/cp-frontend-IgorLopesOliveira/sprookje",
 		"pictureLink": "https://res.cloudinary.com/dggbn1sjv/image/upload/v1748076246/Man_nemu5o.png"
 	}
 ]
